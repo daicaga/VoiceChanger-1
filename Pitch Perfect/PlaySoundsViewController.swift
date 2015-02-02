@@ -73,6 +73,10 @@ class PlaySoundsViewController: UIViewController {
         //audioPlayer.play()
     }
     
+    @IBAction func darthVaderButtonAction(sender: UIButton) {
+        playAudioWithVariablePitch(-700)
+    }
+    
     @IBAction func chipmunkButtonAction(sender: AnyObject) {
         playAudioWithVariablePitch(1000)
         

@@ -147,14 +147,25 @@
                                     <action selector="chipmunkButtonAction:" destination="EGP-Bq-Q8Y" eventType="touchUpInside" id="MPj-PK-Gmm"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UZl-ab-BJf">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" image="darthVader">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="darthVaderButtonAction:" destination="EGP-Bq-Q8Y" eventType="touchUpInside" id="PKz-wB-gcW"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="UZl-ab-BJf" firstAttribute="top" secondItem="5fa-2y-m5A" secondAttribute="bottom" constant="113" id="8mD-DL-hEN"/>
                             <constraint firstItem="nVM-Xe-Rzq" firstAttribute="top" secondItem="NI9-Sc-yZH" secondAttribute="bottom" constant="50" id="Hka-Vo-dYC"/>
                             <constraint firstAttribute="centerX" secondItem="iHo-8c-ksh" secondAttribute="centerX" constant="-2" id="JBF-fX-zpn"/>
                             <constraint firstAttribute="trailingMargin" secondItem="5fa-2y-m5A" secondAttribute="trailing" constant="20" id="Ubo-SD-bfC"/>
                             <constraint firstItem="jAs-6h-Vka" firstAttribute="leading" secondItem="yT0-Sk-OLU" secondAttribute="leadingMargin" constant="20" id="VZx-fS-UuY"/>
                             <constraint firstItem="5fa-2y-m5A" firstAttribute="top" secondItem="NI9-Sc-yZH" secondAttribute="bottom" constant="50" id="YM2-hP-Ukb"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="UZl-ab-BJf" secondAttribute="trailing" constant="20" id="gw8-hI-PqS"/>
                             <constraint firstItem="jAs-6h-Vka" firstAttribute="top" secondItem="nVM-Xe-Rzq" secondAttribute="bottom" constant="113" id="iSz-rr-NYN"/>
                             <constraint firstItem="3QV-WR-OO4" firstAttribute="top" secondItem="iHo-8c-ksh" secondAttribute="bottom" constant="32" id="o0t-xR-0op"/>
                             <constraint firstItem="nVM-Xe-Rzq" firstAttribute="leading" secondItem="yT0-Sk-OLU" secondAttribute="leadingMargin" constant="20" id="t3R-06-dqV"/>
@@ -165,11 +176,14 @@
                                 <exclude reference="5fa-2y-m5A"/>
                                 <exclude reference="iHo-8c-ksh"/>
                                 <exclude reference="jAs-6h-Vka"/>
+                                <exclude reference="UZl-ab-BJf"/>
                             </mask>
                             <mask key="constraints">
                                 <exclude reference="o0t-xR-0op"/>
                                 <exclude reference="Ubo-SD-bfC"/>
                                 <exclude reference="YM2-hP-Ukb"/>
+                                <exclude reference="8mD-DL-hEN"/>
+                                <exclude reference="gw8-hI-PqS"/>
                                 <exclude reference="JBF-fX-zpn"/>
                                 <exclude reference="VZx-fS-UuY"/>
                                 <exclude reference="iSz-rr-NYN"/>
@@ -183,11 +197,14 @@
                                 <include reference="5fa-2y-m5A"/>
                                 <include reference="iHo-8c-ksh"/>
                                 <include reference="jAs-6h-Vka"/>
+                                <include reference="UZl-ab-BJf"/>
                             </mask>
                             <mask key="constraints">
                                 <include reference="o0t-xR-0op"/>
                                 <include reference="Ubo-SD-bfC"/>
                                 <include reference="YM2-hP-Ukb"/>
+                                <include reference="8mD-DL-hEN"/>
+                                <include reference="gw8-hI-PqS"/>
                                 <include reference="JBF-fX-zpn"/>
                                 <include reference="VZx-fS-UuY"/>
                                 <include reference="iSz-rr-NYN"/>
@@ -222,6 +239,7 @@
     </scenes>
     <resources>
         <image name="chipmunk" width="100" height="100"/>
+        <image name="darthVader" width="100" height="100"/>
         <image name="microphone" width="100" height="100"/>
         <image name="rabbitButton" width="100" height="100"/>
         <image name="snail" width="100" height="100"/>
